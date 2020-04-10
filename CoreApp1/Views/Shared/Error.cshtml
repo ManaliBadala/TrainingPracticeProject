@@ -1,0 +1,17 @@
+﻿
+@if (ViewBag.ErrorTitle == null)
+{
+    <h3>
+        An error occured while processing your request.
+        The Support Team is notified and we are working on it.
+    </h3>
+    <h5>
+        Please contact us on prag@tech.com
+    </h5>
+}
+
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
